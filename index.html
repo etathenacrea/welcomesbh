@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome Car Rental — Location de voitures VIP · Saint-Barthélemy</title>
+<meta name="description" content="Location de voitures haut de gamme à Saint-Barthélemy. Accueil personnalisé à l'aéroport et au port, voitures électriques, livraison où vous le souhaitez.">
+<link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<!-- ============ BARRE SUPÉRIEURE ============ -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="left"><a href="tel:+590690650757">+590 690 650 757</a><span class="sep">·</span>Route du Stade – St Jean, 97133 Saint-Barthélemy</div>
+    <div class="right">
+      <span class="langs"><a href="#" class="on">FR</a><span class="sep">|</span><a href="#" data-lang="en">EN</a></span>
+      <span class="sep">·</span><a href="#connexion">Connexion</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ EN-TÊTE / NAVIGATION ============ -->
+<header class="head" id="head">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Welcome Car Rental"><img src="assets/logos/welcome-logo.png" alt="Welcome Car Rental"></a>
+    <nav class="nav" id="nav">
+      <a href="#accueil">Accueil</a>
+      <a href="#flotte">Notre flotte</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="cta-zone">
+      <a href="#reserver" class="btn btn--gold">Réserver</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="accueil">
+  <div class="wrap">
+    <div class="hero__txt">
+      <span class="kicker">Location de voitures VIP · Saint-Barthélemy</span>
+      <h1>L'île, <em>clé en main.</em></h1>
+      <p>Une sélection de véhicules d'exception, un accueil personnalisé à l'aéroport comme au port, et la liberté de sillonner Saint-Barth à votre rythme.</p>
+      <div class="hero__actions">
+        <a href="#reserver" class="btn btn--gold">Réserver un véhicule</a>
+        <a href="#flotte" class="btn btn--ghost">Découvrir la flotte</a>
+      </div>
+    </div>
+    <div class="hero__car">
+      <img src="assets/img/cars/mini-cooper-s.png" alt="Mini Cooper S cabriolet" loading="eager">
+    </div>
+  </div>
+</section>
+
+<!-- ============ WIDGET DE RÉSERVATION ============ -->
+<!-- ╔═══ ITec ═══ Brancher ici votre JS de réservation propriétaire.
+     Conserver les champs name= : pickup_location, return_location, pickup_date, return_date.
+     Le bouton soumet #booking-form. La structure/style ci-dessous est à intégrer telle quelle. ═══╝ -->
+<div class="wrap" id="reserver">
+  <form class="booking" id="booking-form" action="#" method="get">
+    <div class="booking__card">
+      <div class="bk-field">
+        <label for="pickup_location">Prise en charge</label>
+        <select id="pickup_location" name="pickup_location">
+          <option>Aéroport — St Jean</option>
+          <option>Port de Gustavia</option>
+          <option>Votre hôtel / villa</option>
+          <option>Agence — Route du Stade</option>
+        </select>
+      </div>
+      <div class="bk-field">
+        <label for="return_location">Restitution</label>
+        <select id="return_location" name="return_location">
+          <option>Même lieu</option>
+          <option>Aéroport — St Jean</option>
+          <option>Port de Gustavia</option>
+          <option>Votre hôtel / villa</option>
+        </select>
+      </div>
+      <div class="bk-field">
+        <label for="pickup_date">Date de prise</label>
+        <input type="date" id="pickup_date" name="pickup_date">
+      </div>
+      <div class="bk-field">
+        <label for="return_date">Date de retour</label>
+        <input type="date" id="return_date" name="return_date">
+      </div>
+      <button type="submit" class="btn btn--gold">Rechercher</button>
+    </div>
+  </form>
+</div>
+
+<!-- ============ FLOTTE ============ -->
+<section class="section" id="flotte">
+  <div class="wrap">
+    <div class="shead">
+      <span class="kicker">Notre flotte</span>
+      <h2>Une voiture pour chaque envie</h2>
+      <p>Citadines agiles, SUV familiaux et cabriolets d'exception — entretenus avec soin et livrés impeccables.</p>
+      <div class="rule"></div>
+    </div>
+    <div class="fleet">
+      <article class="fcard">
+        <div class="fcard__ph"><img src="assets/img/cars/picanto.png" alt="Citadine"></div>
+        <div class="fcard__body">
+          <h3>Citadines</h3>
+          <div class="fcard__sub">Agiles &amp; économiques</div>
+          <p>Parfaites pour se faufiler dans les ruelles de Gustavia et se garer partout.</p>
+          <a class="fcard__link" href="#">Découvrir <span>&rarr;</span></a>
+        </div>
+      </article>
+      <article class="fcard">
+        <div class="fcard__ph"><img src="assets/img/cars/large-suv.png" alt="SUV familial"></div>
+        <div class="fcard__body">
+          <h3>SUV &amp; Familiales</h3>
+          <div class="fcard__sub">Espace &amp; confort</div>
+          <p>Jusqu'à 7 places pour la famille, les bagages et les routes de l'île en toute sérénité.</p>
+          <a class="fcard__link" href="#">Découvrir <span>&rarr;</span></a>
+        </div>
+      </article>
+      <article class="fcard">
+        <div class="fcard__ph"><img src="assets/img/cars/holly-beach.png" alt="Cabriolet & Moke"></div>
+        <div class="fcard__body">
+          <h3>Cabriolets &amp; Moke</h3>
+          <div class="fcard__sub">L'esprit Saint-Barth</div>
+          <p>Cheveux au vent, du lever au coucher du soleil — l'expérience cabriolet par excellence.</p>
+          <a class="fcard__link" href="#">Découvrir <span>&rarr;</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HISTOIRE / FRANCK & CÉLINE ============ -->
+<!-- NB : texte de présentation à valider/remplacer par les fondateurs. Une vraie photo de Franck & Céline serait idéale ici. -->
+<section class="story section">
+  <div class="wrap">
+    <div class="story__txt">
+      <span class="kicker">Bienvenue chez Welcome</span>
+      <h2>Franck &amp; Céline vous accueillent</h2>
+      <p>Installés à Saint-Barthélemy, nous avons fondé Welcome Car Rental avec une idée simple&nbsp;: faire de la location de voiture un moment aussi agréable que le séjour lui-même.</p>
+      <p>Un accueil personnalisé, des véhicules choisis et entretenus avec exigence, et une disponibilité de chaque instant pour que vous n'ayez qu'à profiter de l'île.</p>
+      <div class="sign">Franck &amp; Céline</div>
+    </div>
+    <div class="story__media">
+      <img src="assets/img/cars/mini-cooper-new-generation.png" alt="Mini Cooper New Generation">
+      <span class="tag">Saint-Barthélemy</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section section--cream" id="services">
+  <div class="wrap">
+    <div class="shead">
+      <span class="kicker">Nos services</span>
+      <h2>Le confort, du début à la fin</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="svcs">
+      <div class="svc">
+        <div class="svc__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg></div>
+        <h3>Accueil personnalisé</h3>
+        <p>Nous vous accueillons directement à l'aéroport et au port, clés en main, sans attente.</p>
+      </div>
+      <div class="svc">
+        <div class="svc__ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg></div>
+        <h3>Voitures électriques</h3>
+        <p>Une flotte qui inclut des modèles électriques, pour explorer l'île en toute discrétion.</p>
+      </div>
+      <div class="svc">
+        <div class="svc__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <h3>Livraison où vous voulez</h3>
+        <p>Hôtel, villa, plage&nbsp;: nous livrons et récupérons votre véhicule à l'endroit de votre choix.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARTENAIRES ============ -->
+<section class="section partners">
+  <div class="wrap">
+    <div class="shead">
+      <span class="kicker">Ils nous font confiance</span>
+      <h2>Nos partenaires</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="plogos">
+      <img src="assets/img/partners/toiny.png" alt="Le Toiny">
+      <img src="assets/img/partners/le-barthelemy.png" alt="Le Barthélemy">
+      <img src="assets/img/partners/christopher.png" alt="Le Christopher">
+      <img src="assets/img/partners/fouquets.png" alt="Fouquet's">
+      <img src="assets/img/partners/le-barth.png" alt="Le Barth Villa">
+      <img src="assets/img/partners/gypsea.png" alt="Gyp Sea">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section cta">
+  <div class="wrap">
+    <span class="kicker" style="color:var(--or-clair)">Prêt à partir ?</span>
+    <h2>Réservez votre véhicule</h2>
+    <p>Dites-nous vos dates et l'endroit où vous récupérer&nbsp;: on s'occupe du reste.</p>
+    <a href="#reserver" class="btn btn--gold">Réserver maintenant</a>
+  </div>
+</section>
+
+<!-- ============ PIED DE PAGE ============ -->
+<footer class="foot" id="contact">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__brand">
+        <img src="assets/logos/welcome-logo.png" alt="Welcome Car Rental">
+        <p>Location de voitures haut de gamme à Saint-Barthélemy. Accueil personnalisé, 7 jours sur 7.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <a href="#accueil">Accueil</a>
+        <a href="#flotte">Notre flotte</a>
+        <a href="#services">Services</a>
+        <a href="#reserver">Réserver</a>
+      </div>
+      <div>
+        <h4>Informations</h4>
+        <a href="#">Conditions de vente</a>
+        <a href="#">Mentions légales</a>
+        <a href="#connexion">Connexion / Inscription</a>
+      </div>
+      <div class="foot__contact">
+        <h4>Contact</h4>
+        <div><a href="tel:+590690650757">+590 690 650 757</a></div>
+        <div><a href="mailto:info@welcomesbh.com">info@welcomesbh.com</a></div>
+        <div>Route du Stade – St Jean<br>97133 Saint-Barthélemy</div>
+        <div>7/7 · 8h – 18h</div>
+      </div>
+    </div>
+    <div class="foot__bot">
+      <span>© 2026 Welcome Car Rental · Saint-Barthélemy</span>
+      <span>Facebook · Instagram</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
