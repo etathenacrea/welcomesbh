@@ -68,6 +68,7 @@ h1,h2,h3{ font-family:var(--serif); font-weight:500; line-height:1.08; color:var
 .hero__txt h1{ font-size:64px; letter-spacing:-.01em; }
 .hero__txt h1 em{ font-style:italic; color:var(--or); }
 .hero__txt p{ margin:22px 0 30px; font-size:18px; color:var(--gris); max-width:440px; }
+.hero__sign{ font-family:var(--serif); font-style:italic; font-weight:500; font-size:26px; line-height:1.1; color:var(--or); margin:12px 0 0 !important; max-width:none !important; }
 .hero__actions{ display:flex; gap:14px; flex-wrap:wrap; }
 .hero__car{ position:relative; }
 .hero__car::before{ content:""; position:absolute; inset:6% 0 14%; border-radius:50%;
@@ -185,6 +186,7 @@ h1,h2,h3{ color:var(--creme); }
 .hero{ background:linear-gradient(180deg,#15130f 0%, #0b0b0a 100%); }
 .hero__txt h1 em{ color:var(--or-clair); }
 .hero__txt p{ color:rgba(245,239,228,.66); }
+.hero__sign{ color:var(--or-clair); }
 .hero__car::before{ background:radial-gradient(closest-side, rgba(201,169,97,.22), transparent 72%); }
 .booking__card{ background:#17150f; border-color:rgba(201,169,97,.26); box-shadow:0 22px 60px -28px rgba(0,0,0,.85); }
 .bk-field{ border-right-color:rgba(201,169,97,.16); }
