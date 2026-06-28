@@ -136,7 +136,8 @@ h1,h2,h3{ font-family:var(--serif); font-weight:500; line-height:1.08; color:var
 .foot{ background:var(--noir); color:rgba(245,239,228,.72); padding:70px 0 28px; font-size:14px; }
 .foot__grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; padding-bottom:46px;
   border-bottom:1px solid rgba(201,169,97,.18); }
-.foot__brand img{ height:48px; margin-bottom:18px; }
+.foot__brand img{ height:48px; margin-bottom:10px; }
+.foot__slogan{ font-family:var(--serif); font-style:italic; font-weight:500; font-size:21px; color:var(--or-clair); margin:0 0 14px; line-height:1.1; }
 .foot__brand p{ color:rgba(245,239,228,.6); max-width:260px; }
 .foot h4{ font-family:var(--sans); font-weight:600; font-size:11px; letter-spacing:.2em; text-transform:uppercase;
   color:var(--or-clair); margin-bottom:18px; }
