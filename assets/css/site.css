@@ -56,6 +56,7 @@ h1,h2,h3{ font-family:var(--serif); font-weight:500; line-height:1.08; color:var
 .nav a{ font-size:13.5px; font-weight:500; letter-spacing:.02em; color:var(--anthracite); position:relative; }
 .nav a::after{ content:""; position:absolute; left:0; bottom:-6px; width:0; height:1px; background:var(--or); transition:.25s; }
 .nav a:hover::after{ width:100%; }
+.nav a.is-active{ color:var(--or); } .nav a.is-active::after{ width:100%; }
 .head .cta-zone{ display:flex; align-items:center; gap:18px; }
 .burger{ display:none; background:none; border:0; cursor:pointer; width:30px; height:22px; }
 .burger span{ display:block; height:2px; background:var(--noir); margin:5px 0; transition:.25s; }
