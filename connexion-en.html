@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Welcome Car Rental — Espace client · Connexion / Inscription</title>
-<meta name="description" content="Espace client Welcome Car Rental : connectez-vous pour gérer vos réservations à Saint-Barthélemy, ou créez votre compte en quelques secondes.">
+<title>Welcome Car Rental — Client area · Login / Sign-up</title>
+<meta name="description" content="Welcome Car Rental client area: log in to manage your bookings in Saint-Barthélemy, or create your account in just a few seconds.">
 <link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,86 +40,86 @@
 
 <div class="topbar"><div class="wrap">
   <div class="left"><a href="tel:+590690650757">+590 690 650 757</a><span class="sep">·</span>Route du Stade – St Jean, 97133 Saint-Barthélemy</div>
-  <div class="right"><span class="langs"><a href="#" class="on">FR</a><span class="sep">|</span><a href="connexion-en.html" data-lang="en">EN</a></span><span class="sep">·</span><a href="connexion.html" class="on">Connexion</a></div>
+  <div class="right"><span class="langs"><a href="connexion.html" data-lang="fr">FR</a><span class="sep">|</span><a href="#" class="on">EN</a></span><span class="sep">·</span><a href="connexion-en.html" class="on">Login</a></div>
 </div></div>
 
 <header class="head" id="head"><div class="wrap">
-  <a class="logo" href="index.html" aria-label="Welcome Car Rental"><img src="assets/logos/welcome-logo.png" alt="Welcome Car Rental"></a>
+  <a class="logo" href="index-en.html" aria-label="Welcome Car Rental"><img src="assets/logos/welcome-logo.png" alt="Welcome Car Rental"></a>
   <nav class="nav" id="nav">
-    <a href="index.html#accueil">Accueil</a>
-    <a href="flotte.html">Notre flotte</a>
-    <a href="index.html#services">Services</a>
-    <a href="contact.html">Contact</a>
+    <a href="index-en.html#accueil">Home</a>
+    <a href="flotte-en.html">Our fleet</a>
+    <a href="index-en.html#services">Services</a>
+    <a href="contact-en.html">Contact</a>
   </nav>
-  <div class="cta-zone"><a href="index.html#reserver" class="btn btn--gold">Réserver</a>
+  <div class="cta-zone"><a href="index-en.html#reserver" class="btn btn--gold">Book</a>
   <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button></div>
 </div></header>
 
-<!-- ============ HERO ESPACE CLIENT ============ -->
+<!-- ============ HERO CLIENT AREA ============ -->
 <section class="ahero"><div class="wrap">
-  <span class="kicker">Espace client</span>
-  <h1>Connexion &amp; inscription</h1>
-  <p>Retrouvez vos réservations, vos informations et réservez plus vite à chaque séjour.</p>
+  <span class="kicker">Client area</span>
+  <h1>Login &amp; sign-up</h1>
+  <p>Find your bookings and details, and book faster on every stay.</p>
 </div></section>
 
-<!-- ============ CONNEXION + INSCRIPTION ============ -->
-<!-- ITec : l'authentification (connexion, création de compte, mot de passe oublié) est branchée de votre côté. On ne fournit que le markup + le style ; aucun traitement n'est implémenté ici. -->
+<!-- ============ LOGIN + SIGN-UP ============ -->
+<!-- ITec: authentication (login, account creation, forgot password) is wired up on your side. We only provide the markup + styling; no processing is implemented here. -->
 <section class="section"><div class="wrap">
   <div class="auth-grid">
 
-    <!-- Déjà client -->
+    <!-- Existing client -->
     <form class="acard is-primary" id="login-form" action="#" method="post" novalidate>
-      <h2>J'ai déjà un compte</h2>
-      <p class="lead">Connectez-vous pour accéder à vos réservations.</p>
-      <div class="field"><label for="lg-email">E-mail</label><input id="lg-email" name="email" type="email" placeholder="vous@exemple.com" autocomplete="email"></div>
-      <div class="field"><label for="lg-pass">Mot de passe</label><input id="lg-pass" name="password" type="password" placeholder="••••••••" autocomplete="current-password"></div>
-      <div class="arow"><label class="acheck" style="margin:0"><input type="checkbox" name="remember"> Se souvenir de moi</label><a href="#">Mot de passe oublié ?</a></div>
-      <button type="submit" class="btn btn--gold">Se connecter</button>
+      <h2>I already have an account</h2>
+      <p class="lead">Log in to access your bookings.</p>
+      <div class="field"><label for="lg-email">Email</label><input id="lg-email" name="email" type="email" placeholder="you@example.com" autocomplete="email"></div>
+      <div class="field"><label for="lg-pass">Password</label><input id="lg-pass" name="password" type="password" placeholder="••••••••" autocomplete="current-password"></div>
+      <div class="arow"><label class="acheck" style="margin:0"><input type="checkbox" name="remember"> Remember me</label><a href="#">Forgot password?</a></div>
+      <button type="submit" class="btn btn--gold">Log in</button>
     </form>
 
-    <!-- Nouveau client -->
+    <!-- New client -->
     <form class="acard" id="register-form" action="#" method="post" novalidate>
-      <h2>Créer un compte</h2>
-      <p class="lead">Quelques secondes suffisent.</p>
-      <div class="field"><label for="rg-nom">Nom complet</label><input id="rg-nom" name="nom" type="text" placeholder="Votre nom" autocomplete="name"></div>
-      <div class="field"><label for="rg-email">E-mail</label><input id="rg-email" name="email" type="email" placeholder="vous@exemple.com" autocomplete="email"></div>
-      <div class="field"><label for="rg-tel">Téléphone</label><input id="rg-tel" name="telephone" type="tel" placeholder="+590…" autocomplete="tel"></div>
-      <div class="field"><label for="rg-pass">Mot de passe</label><input id="rg-pass" name="password" type="password" placeholder="8 caractères minimum" autocomplete="new-password"></div>
-      <label class="acheck"><input type="checkbox" name="cgv"><span>J'accepte les <a href="#">conditions de vente</a> de Welcome Car Rental.</span></label>
-      <button type="submit" class="btn btn--gold">Créer mon compte</button>
+      <h2>Create an account</h2>
+      <p class="lead">It only takes a few seconds.</p>
+      <div class="field"><label for="rg-nom">Full name</label><input id="rg-nom" name="nom" type="text" placeholder="Your name" autocomplete="name"></div>
+      <div class="field"><label for="rg-email">Email</label><input id="rg-email" name="email" type="email" placeholder="you@example.com" autocomplete="email"></div>
+      <div class="field"><label for="rg-tel">Phone</label><input id="rg-tel" name="telephone" type="tel" placeholder="+590…" autocomplete="tel"></div>
+      <div class="field"><label for="rg-pass">Password</label><input id="rg-pass" name="password" type="password" placeholder="8 characters minimum" autocomplete="new-password"></div>
+      <label class="acheck"><input type="checkbox" name="cgv"><span>I accept Welcome Car Rental's <a href="#">terms of sale</a>.</span></label>
+      <button type="submit" class="btn btn--gold">Create my account</button>
     </form>
 
   </div>
 </div></section>
 
-<!-- ============ PIED DE PAGE ============ -->
+<!-- ============ FOOTER ============ -->
 <footer class="foot">
   <div class="wrap">
     <div class="foot__grid">
       <div class="foot__brand">
         <img src="assets/logos/welcome-logo.png" alt="Welcome Car Rental">
         <p class="foot__slogan">L'art de vous accueillir.</p>
-        <p>Location de voitures haut de gamme à Saint-Barthélemy. Accueil personnalisé, 7 jours sur 7.</p>
+        <p>High-end car rental in Saint-Barthélemy. A personal welcome, seven days a week.</p>
       </div>
       <div>
         <h4>Navigation</h4>
-        <a href="index.html#accueil">Accueil</a>
-        <a href="flotte.html">Notre flotte</a>
-        <a href="index.html#services">Services</a>
-        <a href="index.html#reserver">Réserver</a>
+        <a href="index-en.html#accueil">Home</a>
+        <a href="flotte-en.html">Our fleet</a>
+        <a href="index-en.html#services">Services</a>
+        <a href="index-en.html#reserver">Book</a>
       </div>
       <div>
-        <h4>Informations</h4>
-        <a href="#">Conditions de vente</a>
-        <a href="#">Mentions légales</a>
-        <a href="connexion.html">Connexion / Inscription</a>
+        <h4>Information</h4>
+        <a href="#">Terms of sale</a>
+        <a href="#">Legal notice</a>
+        <a href="connexion-en.html">Login / Sign-up</a>
       </div>
       <div class="foot__contact">
         <h4>Contact</h4>
         <div><a href="tel:+590690650757">+590 690 650 757</a></div>
         <div><a href="mailto:info@welcomesbh.com">info@welcomesbh.com</a></div>
         <div>Route du Stade – St Jean<br>97133 Saint-Barthélemy</div>
-        <div>7/7 · 8h – 18h</div>
+        <div>Daily · 8 am – 6 pm</div>
       </div>
     </div>
     <div class="foot__bot">
