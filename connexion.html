@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome Car Rental — Espace client · Connexion / Inscription</title>
+<meta name="description" content="Espace client Welcome Car Rental : connectez-vous pour gérer vos réservations à Saint-Barthélemy, ou créez votre compte en quelques secondes.">
+<link rel="icon" href="assets/logos/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  .ahero{ background:linear-gradient(180deg,#15130f,#0b0b0a); text-align:center; padding:62px 0 40px; }
+  .ahero .kicker{ display:block; margin-bottom:14px; }
+  .ahero h1{ font-size:52px; margin:0; }
+  .ahero p{ color:rgba(245,239,228,.7); font-size:17px; max-width:540px; margin:16px auto 0; }
+  .auth-grid{ display:grid; grid-template-columns:1fr 1fr; gap:30px; align-items:start; max-width:920px; margin:0 auto; }
+  @media(max-width:780px){ .auth-grid{ grid-template-columns:1fr; gap:24px; } }
+  .acard{ background:#15140f; border:1px solid rgba(201,169,97,.18); border-radius:8px; padding:34px; }
+  .acard.is-primary{ border-color:rgba(201,169,97,.4); }
+  .acard h2{ font-size:25px; margin:0 0 4px; }
+  .acard .lead{ color:rgba(245,239,228,.6); font-size:14px; margin-bottom:22px; }
+  .field{ margin-bottom:15px; }
+  .field label{ display:block; font-size:12px; letter-spacing:.05em; color:rgba(245,239,228,.72); margin-bottom:6px; }
+  .field input{ width:100%; background:#0d0d0b; border:1px solid rgba(201,169,97,.22); border-radius:4px;
+    padding:12px 14px; color:var(--creme); font-family:var(--sans); font-size:15px; transition:border-color .2s; }
+  .field input::placeholder{ color:rgba(245,239,228,.32); }
+  .field input:focus{ outline:none; border-color:var(--or-clair); }
+  .acard .btn{ width:100%; justify-content:center; margin-top:8px; }
+  .arow{ display:flex; align-items:center; justify-content:space-between; margin:4px 0 2px; font-size:13px; }
+  .arow a{ color:var(--or-clair); } .arow a:hover{ text-decoration:underline; }
+  .acheck{ display:flex; gap:9px; align-items:flex-start; font-size:12.5px; color:rgba(245,239,228,.66); margin:6px 0 14px; line-height:1.4; }
+  .acheck input{ margin-top:2px; accent-color:var(--or); }
+  .acheck a{ color:var(--or-clair); }
+  .asep{ text-align:center; font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:rgba(245,239,228,.4); margin:22px 0 6px; }
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <div class="left"><a href="tel:+590690650757">+590 690 650 757</a><span class="sep">·</span>Route du Stade – St Jean, 97133 Saint-Barthélemy</div>
+  <div class="right"><span class="langs"><a href="#" class="on">FR</a><span class="sep">|</span><a href="#" data-lang="en">EN</a></span><span class="sep">·</span><a href="connexion.html" class="on">Connexion</a></div>
+</div></div>
+
+<header class="head" id="head"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="Welcome Car Rental"><img src="assets/logos/welcome-logo.png" alt="Welcome Car Rental"></a>
+  <nav class="nav" id="nav">
+    <a href="index.html#accueil">Accueil</a>
+    <a href="flotte.html">Notre flotte</a>
+    <a href="index.html#services">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="cta-zone"><a href="index.html#reserver" class="btn btn--gold">Réserver</a>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button></div>
+</div></header>
+
+<!-- ============ HERO ESPACE CLIENT ============ -->
+<section class="ahero"><div class="wrap">
+  <span class="kicker">Espace client</span>
+  <h1>Connexion &amp; inscription</h1>
+  <p>Retrouvez vos réservations, vos informations et réservez plus vite à chaque séjour.</p>
+</div></section>
+
+<!-- ============ CONNEXION + INSCRIPTION ============ -->
+<!-- ITec : l'authentification (connexion, création de compte, mot de passe oublié) est branchée de votre côté. On ne fournit que le markup + le style ; aucun traitement n'est implémenté ici. -->
+<section class="section"><div class="wrap">
+  <div class="auth-grid">
+
+    <!-- Déjà client -->
+    <form class="acard is-primary" id="login-form" action="#" method="post" novalidate>
+      <h2>J'ai déjà un compte</h2>
+      <p class="lead">Connectez-vous pour accéder à vos réservations.</p>
+      <div class="field"><label for="lg-email">E-mail</label><input id="lg-email" name="email" type="email" placeholder="vous@exemple.com" autocomplete="email"></div>
+      <div class="field"><label for="lg-pass">Mot de passe</label><input id="lg-pass" name="password" type="password" placeholder="••••••••" autocomplete="current-password"></div>
+      <div class="arow"><label class="acheck" style="margin:0"><input type="checkbox" name="remember"> Se souvenir de moi</label><a href="#">Mot de passe oublié ?</a></div>
+      <button type="submit" class="btn btn--gold">Se connecter</button>
+    </form>
+
+    <!-- Nouveau client -->
+    <form class="acard" id="register-form" action="#" method="post" novalidate>
+      <h2>Créer un compte</h2>
+      <p class="lead">Quelques secondes suffisent.</p>
+      <div class="field"><label for="rg-nom">Nom complet</label><input id="rg-nom" name="nom" type="text" placeholder="Votre nom" autocomplete="name"></div>
+      <div class="field"><label for="rg-email">E-mail</label><input id="rg-email" name="email" type="email" placeholder="vous@exemple.com" autocomplete="email"></div>
+      <div class="field"><label for="rg-tel">Téléphone</label><input id="rg-tel" name="telephone" type="tel" placeholder="+590…" autocomplete="tel"></div>
+      <div class="field"><label for="rg-pass">Mot de passe</label><input id="rg-pass" name="password" type="password" placeholder="8 caractères minimum" autocomplete="new-password"></div>
+      <label class="acheck"><input type="checkbox" name="cgv"> J'accepte les <a href="#">conditions de vente</a> de Welcome Car Rental.</label>
+      <button type="submit" class="btn btn--gold">Créer mon compte</button>
+    </form>
+
+  </div>
+</div></section>
+
+<!-- ============ PIED DE PAGE ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__brand">
+        <img src="assets/logos/welcome-logo.png" alt="Welcome Car Rental">
+        <p class="foot__slogan">L'art de vous accueillir.</p>
+        <p>Location de voitures haut de gamme à Saint-Barthélemy. Accueil personnalisé, 7 jours sur 7.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <a href="index.html#accueil">Accueil</a>
+        <a href="flotte.html">Notre flotte</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#reserver">Réserver</a>
+      </div>
+      <div>
+        <h4>Informations</h4>
+        <a href="#">Conditions de vente</a>
+        <a href="#">Mentions légales</a>
+        <a href="connexion.html">Connexion / Inscription</a>
+      </div>
+      <div class="foot__contact">
+        <h4>Contact</h4>
+        <div><a href="tel:+590690650757">+590 690 650 757</a></div>
+        <div><a href="mailto:info@welcomesbh.com">info@welcomesbh.com</a></div>
+        <div>Route du Stade – St Jean<br>97133 Saint-Barthélemy</div>
+        <div>7/7 · 8h – 18h</div>
+      </div>
+    </div>
+    <div class="foot__bot">
+      <span>© 2026 Welcome Car Rental · Saint-Barthélemy</span>
+      <span>Facebook · Instagram</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
