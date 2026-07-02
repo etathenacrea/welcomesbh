@@ -50,8 +50,8 @@ h1,h2,h3{ font-family:var(--serif); font-weight:500; line-height:1.08; color:var
 .head{ position:sticky; top:0; z-index:40; background:var(--blanc);
   border-bottom:1px solid rgba(140,122,78,.18); transition:box-shadow .2s; }
 .head.scrolled{ box-shadow:0 6px 24px -16px rgba(0,0,0,.35); }
-.head .wrap{ display:flex; align-items:center; justify-content:space-between; height:90px; }
-.head .logo img{ height:60px; }
+.head .wrap{ display:flex; align-items:center; justify-content:space-between; height:104px; }
+.head .logo img{ height:76px; }
 .nav{ display:flex; align-items:center; gap:34px; }
 .nav a{ font-size:13.5px; font-weight:500; letter-spacing:.02em; color:var(--anthracite); position:relative; }
 .nav a::after{ content:""; position:absolute; left:0; bottom:-6px; width:0; height:1px; background:var(--or); transition:.25s; }
