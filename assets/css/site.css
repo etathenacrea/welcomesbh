@@ -129,7 +129,6 @@ h1,h2,h3{ font-family:var(--serif); font-weight:500; line-height:1.08; color:var
 .plogos img{ width:168px; height:92px; object-fit:contain; background:#fff; padding:15px 22px; border-radius:10px;
   border:1px solid rgba(20,16,8,.05); box-shadow:0 6px 18px -10px rgba(20,16,8,.32); box-sizing:border-box; transition:.22s; }
 .plogos img:hover{ transform:translateY(-3px); box-shadow:0 14px 28px -12px rgba(20,16,8,.45); }
-.plogos img.badge{ background:#121212; border-color:rgba(201,169,97,.25); }
 
 /* ---------- CTA ---------- */
 .cta{ background:linear-gradient(120deg,#15130f,#2a2218); color:var(--creme); text-align:center; }
